@@ -3,14 +3,27 @@
     width: 100%;
     height: 8%;
     
-}
+}  
 
-h1{
+.u-header__title {
+    h1{
     color:#707070;
     font-style: Roboto;
-    width: 203px;
-    height: 53px;
+    text-align: center;
+    padding-top: 40px;
+    }
    
+}
+
+p{
+  
+    float: right;
+    color:#707070;
+    font-style: Roboto;
+    font-weight: bold;
+    margin-right: 16px;
+  margin-top: -75px;
+    
 }
 
 .l-header__form{
