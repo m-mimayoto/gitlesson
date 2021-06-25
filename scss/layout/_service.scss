@@ -1,0 +1,36 @@
+.l-service-wrapprer{
+    width: 100%;
+}
+
+.l-service{
+    padding: 20px;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+
+    &__takeout{
+        position: relative;
+
+        &__inner{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__img{
+        height: 23.6%;
+    }
+
+    &__eatin{
+        position: relative;
+        margin-top: 20px;
+    
+        &__inner{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+

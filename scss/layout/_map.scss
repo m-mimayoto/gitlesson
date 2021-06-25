@@ -1,0 +1,22 @@
+.l-map{
+    height: 25.44%;
+    position: relative;
+    margin-top: 29px;
+
+    &__layer{
+        position: absolute;
+        background-color: #000000;
+        height: 69%;
+        opacity: 0.29;
+        }
+    
+    
+    &__cap{
+        background-color: #000;
+        opacity: 0.6;
+    }
+
+    &__top{
+        background-size: cover;
+    }
+}

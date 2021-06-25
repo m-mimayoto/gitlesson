@@ -1,7 +1,28 @@
 //foundation//
 @import "scss/foundation/base";
 @import "scss/foundation/resete";
-
+@import "scss/foundation/config";
+@import "scss/foundation/minxin";
 
 //layout//
 @import "scss/layout/header";
+@import "scss/layout/aside";
+@import "scss/layout/footer";
+@import "scss/layout/service";
+@import "scss/layout/top";
+@import "scss/layout/map";
+
+//object//
+    //component//
+    @import "scss/object/component/button";
+
+
+    //project//
+    @import "scss/object/project/header";
+    @import "scss/object/project/aside";
+    @import "scss/object/project/footer";
+    @import "scss/object/project/top";
+    @import "scss/object/project/service";
+    @import "scss/object/project/map";
+
+    //utility//

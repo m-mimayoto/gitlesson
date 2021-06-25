@@ -1,0 +1,81 @@
+.p-service__title__takeout{
+    font-family: Robot;
+    font-size: 41px;
+    color:#EAEAEA;
+    padding-left: 10px;
+    position: absolute;
+    top:11px;
+
+    &::before{
+        content: "―";
+        font-family: Robot;
+        font-size: 41px;
+        color:#EAEAEA;
+        padding-left: 0px;
+        margin-top: 60.3px;
+        position: absolute;
+    }
+}
+
+.p-service__title--eatin{
+    font-family: Robot;
+    font-size: 41px;
+    color:#EAEAEA;
+    padding-left: 10px;
+    position: absolute;
+    top:13px;
+
+    &::before{
+        content: "―";
+        font-family: Robot;
+        font-size: 41px;
+        color:#fff;
+        padding-left: 0px;
+        margin-top: 60.3px;
+        position: absolute;
+    }
+}
+
+.p-service__cat{
+
+    &--top{
+        background-color: #fff;
+        opacity: 0.8;
+        width:93.7%;
+        height: 25.4%;
+        position: absolute;
+        top:46.3%;
+        margin-left: 11px;
+    }
+
+    &--bottom{
+        background-color: #fff;
+        opacity: 0.8;
+        width:93.7%;
+        height: 25.4%;
+        position: absolute;
+        top:73%;
+        margin-left: 11px;
+    }
+
+    &__heading{
+        font-family: M +1m;
+        font-size: 22px;
+        color:#3C2A10;
+        margin-left: 10px;
+        margin-top: 19px;
+        padding: 0;
+    }
+
+    &__item{
+        font-family: M+1m;
+        font-size: 16px;
+        color:#3C2A10;
+        margin: 19px 14px 23px 10px ;
+        overflow-wrap:  break-word;
+        overflow: hidden;
+        width: 92.3%;
+        height: 43.5%;
+    }
+}
+

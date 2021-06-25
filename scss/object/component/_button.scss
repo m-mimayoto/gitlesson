@@ -1,0 +1,58 @@
+.c-button__search{
+    border: solid 1px #707070;
+    color: #707070;
+    cursor: pointer;
+    background-color: #F2EDE9;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 20.8%;
+    height: 46px;
+    margin-left: 12px;
+}
+
+.c-button__menu{
+    font-family: Robot;
+    font-size: 20px;
+    font-weight: bold;
+    color: #707070;
+    width: 51px;
+    height: 26px;
+    position: absolute;
+    top: 14px;
+    right: 16px;
+}
+
+.c-button--close{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    //background-color:#fff;
+    top: 25px;
+    left: 85.3%;
+}
+
+.c-button--line{
+
+    &::before{
+        transform: rotate(45deg);
+        content: "";
+        position: absolute;
+        width: 45.2px;
+        height: 6px;
+        background-color: #707070;
+        display: block;
+    }
+        
+    &::after {
+        transform: rotate(-45deg);
+        content: "";
+        position: absolute;
+        width: 45.2px;
+        height: 6px;
+        background-color: #707070;
+        display: block;
+    }
+}
