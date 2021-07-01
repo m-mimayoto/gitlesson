@@ -1,22 +1,59 @@
-.l-map{
-    height: 25.44%;
+.l-map{//真ん中
+    height: 691px;
     position: relative;
-    margin-top: 29px;
 
-    &__layer{
-        position: absolute;
+    &__layer--top{//上
         background-color: #000000;
-        height: 69%;
         opacity: 0.29;
-        }
-    
-    
-    &__cap{
-        background-color: #000;
-        opacity: 0.6;
+        position: absolute;
+        height: 60%;
+        z-index: 5;
     }
 
-    &__top{
-        background-size: cover;
+    &__layer--all{//下
+        background-color: #000000;
+        
+    }
+
+    &__cap{
+        height: 691px;
+        background-size: contain;
+        vertical-align: bottom;//画像下の余白を消す//
+        background-color: #fff;
+        opacity: 0.6;
+        z-index: 3;
+    }
+}
+
+@media screen and(min-width:834px){
+    .l-map{
+        height: 415px;
+
+        &__layer--top{
+            height: 100%;
+            width: 100%;
+        }
+
+        &__cap{
+            height: 415px;
+        }
+
+    }
+}
+
+@media screen and(min-width:1920px){
+    .l-map{
+        height: 649px;
+        width: 80.9%;
+
+        &__layer--top{
+            height: 100%;
+            width:61.2%
+        }
+
+        &__cap{
+            height: 649px;
+        }
+
     }
 }

@@ -1,5 +1,12 @@
 .l-top{
     position: relative;
     width: 100%;
-    height: 10.5%;
+    height: 285px;
 }
+
+@media screen and(min-width:1920px){
+    .l-top{
+        height: 530px;
+    }
+}
+

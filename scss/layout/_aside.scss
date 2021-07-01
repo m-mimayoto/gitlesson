@@ -1,19 +1,60 @@
-.l-aside{//*Menuを押したら出る黒いレイヤー*//
-    position: absolute;
-     top: 0;
-     width: 100%;
-     height: 100%;
-     background-color:rgba(0,0,0,0.5);
-    }
-    
-
-.l-nav{//*Menuを押したら出る*//
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 87.5%;
+.l-nav{
+    width: 100%;
+    max-width: 87.5%;
     height: 100%;
     background-color: #F2EDE9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: all .5s;
 }
 
+.is-nav--open {
+    position: absolute;
+    transform: translate(0);
+    width: 375px;
+}
 
+.l-aside__layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    opacity: 0; /* 透明度を0にすることで隠す */
+    transition: opacity 0.5s; /* 透明度の0→1になる速度 */
+}
+
+.is-aside__layer--open{
+    width: 100%;
+    height: 100%;
+    opacity: 1; /* メニューが表示されているときには背景が表示 */
+}
+
+@media screen and(min-width:834px){
+    .is-nav--open {
+        width: 367px;
+    }
+}
+
+@media screen and(min-width:1920px){
+    main{
+        width:100%;
+        margin-right: 19.1%;
+    }
+
+    .l-nav{
+        height: 95.1%;
+        width: 19.1%;
+        transform: none;
+        transition: none;
+        position: absolute;
+        
+    }
+}

@@ -1,10 +1,8 @@
-.l-aside{
-    display: none;
+.p-aside{
     a{
         font-family: M+1m;
          color: #707070;
-         //*font-size: 20px;
-        }   
+        } 
 }
 
 .p-nav__memu{
@@ -19,12 +17,14 @@
     &__title a{
         font-weight: bold;
         padding-left: 46px;
+        font-size: 24px;
+        padding-top: 85px;
     }
 
     &__list{
         display: flex;
         flex-direction: column;
-        width:73.1%;
+        
 
         &--margin{
             margin-top: 40px;
@@ -35,6 +35,7 @@
             padding-left: 66px;
             margin-top: 13px;
             margin-bottom: 13px;
+            font-size: 20px;
         }
     }
 }
@@ -46,12 +47,13 @@
      &__title a{
          font-weight: bold;
          padding-left: 46px;
+         font-size: 24px;
      }
  
      &__list{
          display: flex;
          flex-direction: column;
-         width:73.1%;
+        
 
          &--margin{
             margin-top: 40px;
@@ -62,6 +64,7 @@
              padding-left: 66px;
              margin-top: 13px;
              margin-bottom: 13px;
+             font-size: 20px;
          }
      }
  }
@@ -73,12 +76,13 @@
      &__title a{
          font-weight: bold;
          padding-left: 46px;
+         font-size: 24px;
      }
  
      &__list{
          display: flex;
          flex-direction: column;
-         width:73.1%;
+    
 
          &--margin{
             margin-top: 40px;
@@ -89,6 +93,19 @@
              padding-left: 66px; 
              margin-top: 13px;
              margin-bottom: 13px;
+             font-size: 20px;
          }
      }
  }
+
+ @media screen and(min-width:1920px){
+    .p-nav__memu{
+        display: block;
+        font-family: Robot;
+        font-weight: bold;
+        font-size: 34px;
+        color: #707070;
+        margin-top: 82px;
+        margin-left: 46px;
+    }
+}

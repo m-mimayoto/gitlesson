@@ -1,5 +1,14 @@
 .p-top__img{
     background-size: cover;
+    height: 285px;
+}
+
+@media screen and(min-width:1920px){
+    .p-top__img{
+        height:530px;
+        width: 80.9%;
+        
+    }
 }
 
 .p-top__title{
@@ -9,4 +18,18 @@
         color: #fff;
         padding-left: 25px;
         top:119px;
+}
+
+@media screen and(min-width:834px){
+    .p-top__title{
+        padding-left: 86px;
+    }
+}
+
+@media screen and(min-width:1920px){
+    .p-top__title{
+        padding-left: 86px;
+        top:231px;
+        font-size: 40px;
+    }
 }

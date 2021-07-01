@@ -1,19 +1,22 @@
-.p-service__title__takeout{
+.p-service__title--takeout{
     font-family: Robot;
     font-size: 41px;
     color:#EAEAEA;
     padding-left: 10px;
     position: absolute;
     top:11px;
+    
 
     &::before{
         content: "―";
         font-family: Robot;
         font-size: 41px;
+        height: 1px;
         color:#EAEAEA;
         padding-left: 0px;
         margin-top: 60.3px;
         position: absolute;
+
     }
 }
 
@@ -21,7 +24,7 @@
     font-family: Robot;
     font-size: 41px;
     color:#EAEAEA;
-    padding-left: 10px;
+    padding-left: 12px;
     position: absolute;
     top:13px;
 
@@ -79,3 +82,81 @@
     }
 }
 
+
+@media screen and(min-width:834px){
+    .p-service__title--takeout{
+        font-size: 44px;
+        padding-left: 11px;
+        top:12px;
+    }
+    
+    .p-service__title--eatin{
+        font-size: 44px;
+        padding-left: 13px;
+        top:14px;
+    }
+
+    .p-service__cat{
+
+        &--top{
+            width:93.55%;
+            height: 25.25%;
+            top:46.4%;
+            margin-left: 12px;
+        }
+    
+        &--bottom{
+            width:93.55%;
+            height: 25.25%;
+            top:73.1%;
+            margin-left: 12px;
+        }
+    
+        &__heading{
+            font-size: 24px;
+        }
+    } 
+}
+
+
+@media screen and(min-width:1920px){
+    .p-service__title--takeout{
+        font-size: 80px;
+        padding-left: 19px;
+        top:20px;
+    
+        &::before{
+            font-size: 60px;
+            margin-top: 80.3px;
+        }
+    }
+    
+    .p-service__title--eatin{
+        font-size: 80px;
+        padding-left: 22px;
+        top:24px;
+    
+        &::before{
+            font-size: 60px;
+            margin-top: 80.3px;
+        }
+    }
+
+    .p-service__cat{
+
+        &--top{
+            width:93.6%;
+            height: 14.48%;
+            top:67.5%;
+            margin-left: 20px;
+        }
+    
+        &--bottom{
+            width:93.6%;
+            height: 14.48%;
+            top:83.7%;
+            margin-left: 20px;
+        }
+
+    }
+}

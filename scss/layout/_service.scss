@@ -33,4 +33,40 @@
     }
 }
 
+@media screen and(min-width:834px){
+    .l-service{
+       display: flex;
+       flex-direction: row;
+       padding: 40px;
+
+       &__img{
+        height: 681px;
+    }
+
+    &__eatin{
+        margin-top: 0;
+        margin-left: 41px;
+    }
+    }
+}
+
+@media screen and(min-width:1920px){
+    .l-service-wrapprer{
+        width: 80.9%;
+    }
+    .l-service{
+        display: flex;
+        flex-direction: row;
+        padding: 120px 112px 131px 111px;
+
+        &__img{
+            height: 1193px;
+        }
+    
+        &__eatin{
+            margin-top: 0;
+            margin-left: 80px;
+        }
+    }
+}
 

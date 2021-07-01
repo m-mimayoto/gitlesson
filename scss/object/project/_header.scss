@@ -4,20 +4,48 @@
     text-align: center;
     padding-top: 40px;
     font-size: 40px;
-    
 }
 
+@media screen and(min-width:1920px){
+    .p-header__title h1{
+        text-align: none;
+        padding:67px 1163px 66px 65px;
+        font-size: 64px;
+    }
+}
+
+.p-header__search{
+   width: 85.3%;
+   margin: 38px auto;
+   height: 46px;
+}
 .p-header__search__box{
-    width: 61%;
+    width: 71.87%;
     border: solid 1px #707070;
     background-color: #fff;
     border-radius: 10px;
     height: 46px;
-    margin: 38px auto 40px 24px;
 }
 
+@media screen and(min-width:834px){
+    .p-header__search{
+        width: 65.46%;
+     }
+
+     .p-header__search__box{
+        width: 72.5%;
+    }
+}
+
+@media screen and(min-width:1920px){
+    .p-header__search{
+        position: absolute;
+        top: 48px;
+        right: 20px;
+        width:35.15%;
+    }
+}
 
 .fas{
     color: #808080;
-  
 }

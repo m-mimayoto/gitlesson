@@ -1,4 +1,5 @@
 .p-map__content{
+    z-index: 6;
     position:absolute;
     top:0;
 
@@ -33,4 +34,32 @@
     width: 78.7%;
     height: 75%;
     line-height: 33px;
+}
+
+@media screen and(min-width:834px){
+    .p-map__content__item{
+        margin: 40px 29px auto 42px;
+        width: 91.5%;
+    }
+
+    .p-map__content__title::before{
+        margin-top: 30px;
+    }
+}
+
+@media screen and(min-width:1920px){
+    .p-map__content__item{
+        //左側のレイヤーだけに文字を収める
+        width: 44.8%;
+        margin: 119px auto 40px 119px;
+    }
+
+    .p-map__content__title{
+        margin-top: 83px;
+        margin-left: 119px;
+
+        &::before{
+            margin-top: 60px;
+        }
+    }
 }
