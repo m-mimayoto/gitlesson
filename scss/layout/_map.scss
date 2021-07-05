@@ -1,7 +1,7 @@
-.l-map{//真ん中
+.l-map{
     height: 691px;
     position: relative;
-
+    
     &__layer--top{//上
         background-color: #000000;
         opacity: 0.29;
@@ -10,18 +10,20 @@
         z-index: 5;
     }
 
-    &__layer--all{//下
-        background-color: #000000;
-        
-    }
-
-    &__cap{
+    &__img--middle{//真ん中
+        background-image: url(../img/map-iphone.jpg);
+        background-size: cover;
+        background-position: center;
         height: 691px;
-        background-size: contain;
-        vertical-align: bottom;//画像下の余白を消す//
-        background-color: #fff;
         opacity: 0.6;
         z-index: 3;
+        position: absolute;
+    }
+
+    &__layer--bottom{
+        height: 691px;
+        background-color: #000000;
+        position: absolute;
     }
 }
 
@@ -30,11 +32,16 @@
         height: 415px;
 
         &__layer--top{
-            height: 100%;
-            width: 100%;
+          width: 100%;
+          height: 100%;
         }
 
-        &__cap{
+        &__img--middle{
+            height: 415px;
+            background-image: url(../img/map-ipad.jpg);
+        }
+
+        &__layer--bottom{
             height: 415px;
         }
 
@@ -45,14 +52,20 @@
     .l-map{
         height: 649px;
         width: 80.9%;
-
+    
         &__layer--top{
             height: 100%;
             width:61.2%
         }
 
-        &__cap{
+        &__img--middle{
             height: 649px;
+            background-image: url(../img/map-pc.jpg);
+        }
+
+        &__layer--bottom{
+            height: 649px;
+            width: 100%;
         }
 
     }

@@ -19,12 +19,14 @@
    margin: 38px auto;
    height: 46px;
 }
+
 .p-header__search__box{
     width: 71.87%;
     border: solid 1px #707070;
     background-color: #fff;
     border-radius: 10px;
     height: 46px;
+    padding-left: 16px;   
 }
 
 @media screen and(min-width:834px){

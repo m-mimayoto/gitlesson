@@ -12,9 +12,10 @@
 }
 
 .is-nav--open {
-    position: absolute;
+    //position: absolute;
     transform: translate(0);
     width: 375px;
+    overflow-y: scroll;
 }
 
 .l-aside__layer{
@@ -50,7 +51,7 @@
     }
 
     .l-nav{
-        height: 95.1%;
+        height: 94.87%;
         width: 19.1%;
         transform: none;
         transition: none;
@@ -58,3 +59,4 @@
         
     }
 }
+

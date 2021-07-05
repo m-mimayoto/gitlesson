@@ -4,13 +4,15 @@
 
 .l-service{
     padding: 20px;
-    background-position: center;
-    background-size: contain;
     display: flex;
     flex-direction: column;
 
     &__takeout{
         position: relative;
+        background-image: url(../img/takeout-iphone.jpg);
+        background-size: cover;
+        height: 642px;
+        background-position: center;
 
         &__inner{
             display: flex;
@@ -18,13 +20,13 @@
         }
     }
 
-    &__img{
-        height: 23.6%;
-    }
-
     &__eatin{
         position: relative;
         margin-top: 20px;
+        background-image: url(../img/eatin-iphone.jpg);
+        background-size: cover;
+        height: 642px;
+        background-position: center;
     
         &__inner{
             display: flex;
@@ -33,20 +35,25 @@
     }
 }
 
+
+
 @media screen and(min-width:834px){
     .l-service{
        display: flex;
        flex-direction: row;
        padding: 40px;
 
-       &__img{
-        height: 681px;
+       &__takeout{
+           height: 681px;
+        background-image: url(../img/takeout-ipad.jpg);
     }
 
-    &__eatin{
-        margin-top: 0;
-        margin-left: 41px;
-    }
+        &__eatin{
+            height: 681px;
+            margin-top: 0;
+            margin-left: 41px;
+            background-image: url(../img/eatin-ipad.jpg);
+        }
     }
 }
 
@@ -59,11 +66,14 @@
         flex-direction: row;
         padding: 120px 112px 131px 111px;
 
-        &__img{
+        &__takeout{
             height: 1193px;
+            background-image: url(../img/takeout-pc.jpg);
         }
     
         &__eatin{
+            height: 1193px;
+            background-image: url(../img/eatin-pc.jpg);
             margin-top: 0;
             margin-left: 80px;
         }

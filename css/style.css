@@ -362,10 +362,10 @@ progress {
 }
 
 .is-nav--open {
-  position: absolute;
   -webkit-transform: translate(0);
           transform: translate(0);
   width: 375px;
+  overflow-y: scroll;
 }
 
 .l-aside__layer {
@@ -404,7 +404,7 @@ progress {
     margin-right: 19.1%;
   }
   .l-nav {
-    height: 95.1%;
+    height: 94.87%;
     width: 19.1%;
     -webkit-transform: none;
             transform: none;
@@ -417,7 +417,7 @@ progress {
 .l-footer {
   height: 5%;
   width: 100%;
-  background: url("../layer.png");
+  background: url("../img/layer.png");
 }
 
 .l-service-wrapprer {
@@ -426,8 +426,6 @@ progress {
 
 .l-service {
   padding: 20px;
-  background-position: center;
-  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,6 +437,10 @@ progress {
 
 .l-service__takeout {
   position: relative;
+  background-image: url(../img/takeout-iphone.jpg);
+  background-size: cover;
+  height: 642px;
+  background-position: center;
 }
 
 .l-service__takeout__inner {
@@ -451,13 +453,13 @@ progress {
           flex-direction: column;
 }
 
-.l-service__img {
-  height: 23.6%;
-}
-
 .l-service__eatin {
   position: relative;
   margin-top: 20px;
+  background-image: url(../img/eatin-iphone.jpg);
+  background-size: cover;
+  height: 642px;
+  background-position: center;
 }
 
 .l-service__eatin__inner {
@@ -481,12 +483,15 @@ progress {
             flex-direction: row;
     padding: 40px;
   }
-  .l-service__img {
+  .l-service__takeout {
     height: 681px;
+    background-image: url(../img/takeout-ipad.jpg);
   }
   .l-service__eatin {
+    height: 681px;
     margin-top: 0;
     margin-left: 41px;
+    background-image: url(../img/eatin-ipad.jpg);
   }
 }
 
@@ -504,10 +509,13 @@ progress {
             flex-direction: row;
     padding: 120px 112px 131px 111px;
   }
-  .l-service__img {
+  .l-service__takeout {
     height: 1193px;
+    background-image: url(../img/takeout-pc.jpg);
   }
   .l-service__eatin {
+    height: 1193px;
+    background-image: url(../img/eatin-pc.jpg);
     margin-top: 0;
     margin-left: 80px;
   }
@@ -517,11 +525,22 @@ progress {
   position: relative;
   width: 100%;
   height: 285px;
+  background-size: cover;
+  background-image: url(../img/top-iphone.jpg);
+  background-position: center;
+}
+
+@media screen and (min-width: 834px) {
+  .l-top {
+    background-image: url(../img/top-ipad.jpg);
+  }
 }
 
 @media screen and (min-width: 1920px) {
   .l-top {
     height: 530px;
+    width: 80.88%;
+    background-image: url(../img/top-pc.jpg);
   }
 }
 
@@ -538,17 +557,20 @@ progress {
   z-index: 5;
 }
 
-.l-map__layer--all {
-  background-color: #000000;
-}
-
-.l-map__cap {
+.l-map__img--middle {
+  background-image: url(../img/map-iphone.jpg);
+  background-size: cover;
+  background-position: center;
   height: 691px;
-  background-size: contain;
-  vertical-align: bottom;
-  background-color: #fff;
   opacity: 0.6;
   z-index: 3;
+  position: absolute;
+}
+
+.l-map__layer--bottom {
+  height: 691px;
+  background-color: #000000;
+  position: absolute;
 }
 
 @media screen and (min-width: 834px) {
@@ -556,10 +578,14 @@ progress {
     height: 415px;
   }
   .l-map__layer--top {
-    height: 100%;
     width: 100%;
+    height: 100%;
   }
-  .l-map__cap {
+  .l-map__img--middle {
+    height: 415px;
+    background-image: url(../img/map-ipad.jpg);
+  }
+  .l-map__layer--bottom {
     height: 415px;
   }
 }
@@ -573,8 +599,13 @@ progress {
     height: 100%;
     width: 61.2%;
   }
-  .l-map__cap {
+  .l-map__img--middle {
     height: 649px;
+    background-image: url(../img/map-pc.jpg);
+  }
+  .l-map__layer--bottom {
+    height: 649px;
+    width: 100%;
   }
 }
 
@@ -681,6 +712,7 @@ progress {
   background-color: #fff;
   border-radius: 10px;
   height: 46px;
+  padding-left: 16px;
 }
 
 @media screen and (min-width: 834px) {
@@ -817,6 +849,8 @@ progress {
     color: #707070;
     margin-top: 82px;
     margin-left: 46px;
+    width: 86px;
+    height: 45px;
   }
 }
 
@@ -849,8 +883,10 @@ progress {
 }
 
 .p-top__img {
-  background-size: cover;
   height: 285px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 1920px) {
@@ -881,6 +917,25 @@ progress {
     top: 231px;
     font-size: 40px;
   }
+}
+
+.p-top__title--menu {
+  position: absolute;
+  font-family: M1m;
+  font-size: 36px;
+  color: #fff;
+  padding-left: 35px;
+  top: 102px;
+}
+
+.p-top__subtitle {
+  position: absolute;
+  font-family: M1m;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 35px;
+  top: 157px;
 }
 
 .p-service__title--takeout {
@@ -1083,5 +1138,10 @@ progress {
   .p-map__content__title::before {
     margin-top: 60px;
   }
+}
+
+.p-menu__desc__title {
+  margin-top: 30px;
+  margin-left: 22px;
 }
 /*# sourceMappingURL=style.css.map */

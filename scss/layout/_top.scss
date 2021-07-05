@@ -2,11 +2,22 @@
     position: relative;
     width: 100%;
     height: 285px;
+    background-size: cover;
+    background-image: url(../img/top-iphone.jpg);
+    background-position: center;
+}
+
+@media screen and(min-width:834px){
+    .l-top{
+        background-image: url(../img/top-ipad.jpg);
+    }
 }
 
 @media screen and(min-width:1920px){
     .l-top{
         height: 530px;
+        width: 80.88%;
+        background-image: url(../img/top-pc.jpg);
     }
 }
 
