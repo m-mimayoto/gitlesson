@@ -21,3 +21,44 @@
     }
 }
 
+.l-top--archive{
+    position: relative;
+    width: 100%;
+    height: 285px;
+    background-size: cover;
+    background-image: url(../img/page-title-archive-iphone.jpg);
+    background-position: center left;
+    opacity: 0.5;
+}
+
+.l-top__title__layer{
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 285px;
+}
+
+@media screen and(min-width:834px){
+    .l-top--archive{
+        height: 283px;
+        background-image: url(../img/page-title-archive-ipad.jpg);
+    }
+
+    .l-top__title__layer{
+        height: 283px;
+    }
+}
+
+@media screen and(min-width:1920px){
+    .l-top--archive{
+        height: 239px;
+        width: 80.88%;
+        background-image: url(../img/page-title-archive-pc.jpg);
+
+    }
+
+    .l-top__title__layer{
+        height: 239px;
+        width: 80.88%;
+    }
+}

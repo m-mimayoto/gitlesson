@@ -15,7 +15,7 @@
 
 .p-top__title{
         position: absolute;
-        font-family: M+ 1m;
+        font-family: Robot;
         font-size: 36px;
         color: #fff;
         padding-left: 25px;
@@ -36,14 +36,15 @@
     }
 }
 
-.p-top{
+.p-top{//アーカイブ
     &__title--menu{
         position: absolute;
-        font-family: M+ 1m;
+        font-family: Roboto;
+        font-weight: bold;
         font-size: 36px;
         color: #fff;
         padding-left: 35px;
-        top:102px;
+        top:319px;
     }
     &__subtitle{
         position: absolute;
@@ -52,8 +53,33 @@
         font-weight: bold;
         color: #fff;
         padding-left: 35px;
-        top:157px;
+        top:374px;
     }
 
 }
 
+@media screen and(min-width:834px){
+    .p-top{//アーカイブ
+        &__title--menu{
+            font-size: 60px;
+            padding-left: 86px;
+        }
+        &__subtitle{
+            padding-left: 275px;
+            top:354px;
+        }
+    
+    }
+}
+
+@media screen and(min-width:1920px){
+    .p-top{//アーカイブ
+        &__title--menu{
+            top:297px;
+        }
+        &__subtitle{
+            top:330px;
+        }
+    
+    }
+}

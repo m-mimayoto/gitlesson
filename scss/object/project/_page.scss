@@ -1,0 +1,105 @@
+.p-pagenation{
+    &__count{
+        display: none;
+    }
+
+    &__before{
+        position: absolute;
+        width: 32px;
+        height: 22px;
+        top:0;
+        left: 25.7px;
+        font-family: M+1m;
+        color: #707070;
+        font-size: 16px;
+    }
+
+    &__after{
+        position: absolute;
+        width: 32px;
+        height: 22px;
+        top: 0;
+        right: 24.8px;
+        font-family: M+1m;
+        color: #707070;
+        font-size: 16px;
+    }
+
+    &__pre--left{
+        position: absolute;
+        left: 0;
+        width: 17.53px;
+        height: 17.07px;
+    }
+
+    &__next--right{
+        position: absolute;
+        right: 0;
+        width: 17.53px;
+        height: 17.07px;
+    }
+}
+
+.fa-angle-double-left::before{
+    color: #707070;
+    line-height: 22px;
+}
+
+.fa-angle-double-right::before{
+    color: #707070;
+    line-height: 22px;
+}
+
+@media screen and(min-width:834px){
+    .l-pagenation{
+        ul{
+            li{
+               margin-right:15px;
+               width: 35px;
+                height: 35px;
+                a{
+                    display: block;
+                    color: #707070;
+                    border: solid 1px #707070;
+                    width: 35px;
+                    height: 35px;
+                    padding: 7px 9px 7px 10px;
+                    font-family: Roboto;
+                    font-weight: bold;
+                    text-align: center;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    .p-pagenation{
+        &__count{
+            display: block;
+            position: absolute;
+            font-family: Roboto;
+            color: #707070;
+            font-weight: bold;
+            line-height: 35px;
+        }
+        
+        &__before{
+            display: none;
+        }
+        
+        &__after{
+            display: none;
+        }
+        
+        &__pre--left{
+            left: 92.3px;
+        }
+
+    }
+    .fa-angle-double-left::before{
+      line-height: 35px;
+    }
+    
+    .fa-angle-double-right::before{
+      line-height: 35px;
+    }
+}

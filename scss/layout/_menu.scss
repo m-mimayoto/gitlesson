@@ -1,0 +1,79 @@
+.l-menu__list{
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    &__item{
+        margin-bottom: 20.9px;
+        height: 585.12px;
+    }
+
+    &__item__img{
+        background-image: url(../img/menu-list-iphone.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 230.53px;
+        width:100% ;
+    }
+
+    &__item__info{
+        background-color: #3C2B1C;
+        height: 354.59px;
+        width: 100%;
+        background-position: center;
+    }
+}
+
+
+@media screen and(min-width:834px){
+    .l-menu__list{
+        padding-left: 43px;
+        padding-right: 35px;
+    
+        &__item{
+            margin-bottom:20.5px;
+            position: relative;
+            height: 354.5px;
+        }
+
+        &__item__img{
+            background-image: url(../img/menu-list-ipad.jpg);
+            height: 354.5px;
+            width: 50%;
+        }
+
+        &__item__info{
+            height: 354.5px;
+            width: 50%;
+            position: absolute;
+            top:0;
+            left: 50%;
+        }
+    }
+}
+
+@media screen and(min-width:1920px){
+    .l-menu__list{
+        width: 80.88%;
+        padding-left: 100px;
+        padding-right: 100px;
+    
+        &__item{
+            height: 471px;
+            margin-bottom:30px;
+            position: relative;
+        }
+    
+        &__item__img{
+            background-image: url(../img/menu-list-pc.jpg);
+            height: 471px;
+            width: 49.59%;
+        }
+    
+        &__item__info{
+            height: 471px;
+            width: 49.96%;
+            left: 49.59%;
+        }
+    }
+}

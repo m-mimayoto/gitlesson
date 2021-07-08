@@ -1,0 +1,39 @@
+.l-menu__pagenation{
+    padding: 39.5px 20.2px 31px 20.2px;
+}
+
+.l-pagenation{
+    position: relative;
+    height: 22px;
+}
+
+.l-pagenation ul{
+    display: none;
+}
+
+
+@media screen and(min-width:834px){
+    .l-menu__pagenation{
+        padding: 85px 113.2px 30px 122px;
+    }
+    
+    .l-pagenation{
+        position: relative;
+        height: 35px;
+    }
+    
+    .l-pagenation ul{
+        display: flex;
+        position: absolute;
+        width: 72.64%;
+        left: 127px;
+    }
+}
+
+@media screen and(min-width:1920px){
+    .l-menu__pagenation{
+        width: 80.88%;
+        padding: 120px 477.2px 64px 477px;
+    }
+
+}
