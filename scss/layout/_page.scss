@@ -14,12 +14,15 @@
 
 @media screen and(min-width:834px){
     .l-menu__pagenation{
-        padding: 85px 113.2px 30px 122px;
+        padding: 0;
+        margin: 85px auto 30px auto;
+        max-width: 598.82px;
     }
     
     .l-pagenation{
         position: relative;
         height: 35px;
+        width: 100%;
     }
     
     .l-pagenation ul{
@@ -32,8 +35,8 @@
 
 @media screen and(min-width:1920px){
     .l-menu__pagenation{
-        width: 80.88%;
-        padding: 120px 477.2px 64px 477px;
+        margin: 120px 844.2px 64px 477px;
+        width: 100%-19.1%;
     }
 
 }

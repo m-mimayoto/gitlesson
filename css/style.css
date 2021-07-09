@@ -735,11 +735,14 @@ progress {
 
 @media screen and (min-width: 834px) {
   .l-menu__pagenation {
-    padding: 85px 113.2px 30px 122px;
+    padding: 0;
+    margin: 85px auto 30px auto;
+    max-width: 598.82px;
   }
   .l-pagenation {
     position: relative;
     height: 35px;
+    width: 100%;
   }
   .l-pagenation ul {
     display: -webkit-box;
@@ -753,8 +756,8 @@ progress {
 
 @media screen and (min-width: 1920px) {
   .l-menu__pagenation {
-    width: 80.88%;
-    padding: 120px 477.2px 64px 477px;
+    margin: 120px 844.2px 64px 477px;
+    width: 80.9%;
   }
 }
 
@@ -1098,17 +1101,17 @@ progress {
   font-weight: bold;
   font-size: 36px;
   color: #fff;
-  padding-left: 35px;
+  padding-left: 37px;
   top: 319px;
 }
 
-.p-top__subtitle {
+.p-top__subtitle--archive {
   position: absolute;
   font-family: M1m;
   font-size: 16px;
   font-weight: bold;
   color: #fff;
-  padding-left: 35px;
+  padding-left: 37px;
   top: 374px;
 }
 
@@ -1117,7 +1120,7 @@ progress {
     font-size: 60px;
     padding-left: 86px;
   }
-  .p-top__subtitle {
+  .p-top__subtitle--archive {
     padding-left: 275px;
     top: 354px;
   }
@@ -1127,7 +1130,48 @@ progress {
   .p-top__title--menu {
     top: 297px;
   }
-  .p-top__subtitle {
+  .p-top__subtitle--archive {
+    top: 330px;
+  }
+}
+
+.p-top__title--search {
+  position: absolute;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  color: #fff;
+  padding-left: 37px;
+  top: 320px;
+}
+
+.p-top__subtitle--archive_search {
+  position: absolute;
+  font-family: M1m;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 37px;
+  top: 374px;
+}
+
+@media screen and (min-width: 834px) {
+  .p-top__title--search {
+    font-size: 60px;
+    padding-left: 86px;
+    top: 319px;
+  }
+  .p-top__subtitle--archive_search {
+    padding-left: 311px;
+    top: 352px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .p-top__title--search {
+    top: 297px;
+  }
+  .p-top__subtitle--archive_search {
     top: 330px;
   }
 }
@@ -1509,6 +1553,10 @@ progress {
     font-weight: bold;
     text-align: center;
     background-color: #fff;
+  }
+  .l-pagenation ul li .p-pagenation--color {
+    background-color: #3C2B1C;
+    color: #fff;
   }
   .p-pagenation__count {
     display: block;

@@ -43,16 +43,16 @@
         font-weight: bold;
         font-size: 36px;
         color: #fff;
-        padding-left: 35px;
+        padding-left: 37px;
         top:319px;
     }
-    &__subtitle{
+    &__subtitle--archive{
         position: absolute;
         font-family: M+ 1m;
         font-size: 16px;
         font-weight: bold;
         color: #fff;
-        padding-left: 35px;
+        padding-left: 37px;
         top:374px;
     }
 
@@ -64,7 +64,7 @@
             font-size: 60px;
             padding-left: 86px;
         }
-        &__subtitle{
+        &__subtitle--archive{
             padding-left: 275px;
             top:354px;
         }
@@ -77,9 +77,55 @@
         &__title--menu{
             top:297px;
         }
-        &__subtitle{
+        &__subtitle--archive{
             top:330px;
         }
-    
+    }
+}
+
+.p-top{//アーカイブサーチ
+    &__title--search{
+            position: absolute;
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 36px;
+            color: #fff;
+            padding-left: 37px;
+            top:320px;
+    }
+
+    &__subtitle--archive_search{
+            position: absolute;
+            font-family: M+ 1m;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            padding-left: 37px;
+            top:374px;
+    }
+}
+
+@media screen and(min-width:834px){
+    .p-top{
+        &__title--search{//アーカイブサーチ
+            font-size: 60px;
+            padding-left: 86px;
+            top:319px;
+        }
+        &__subtitle--archive_search{
+            padding-left: 311px;
+            top:352px;
+        }
+    }
+}
+
+@media screen and(min-width:1920px){
+    .p-top{
+        &__title--search{//アーカイブサーチ
+            top:297px;
+        }
+        &__subtitle--archive_search{
+            top:330px;
+        }
     }
 }
