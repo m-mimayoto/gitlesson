@@ -1,0 +1,49 @@
+.p-gallery{
+    
+    &__column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item__img{
+        background-image: url(../img/product-gallery-iphone.jpg);
+        width: 100%;
+        height: 209px;
+        margin-bottom: 20px;
+        background-position: center;
+    }
+}
+
+@media screen and(min-width:834px){
+    .p-gallery{
+    
+        &__column{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: unset;
+            justify-content: space-between;
+        }
+
+        &__item{
+            width: 48.8%;
+        }
+    
+        &__item__img{
+            height: 205px;
+            background-size: contain;
+        }
+    }    
+}
+
+@media screen and(min-width:1920px){
+    .p-gallery{
+
+        &__item{
+            width: 32.35%;
+        }
+    
+        &__item__img{
+            height: 257px;
+        }
+    }    
+}

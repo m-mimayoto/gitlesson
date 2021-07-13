@@ -1,0 +1,51 @@
+.p-blockquote{
+    height: 617px;
+    background-color: #F5F5F5;
+    &__text{
+        color: #3C2A10;
+        font-family: M+1m;
+        line-height: 1.5;
+        padding: 30px 16px 0 20px;
+        overflow-wrap:  break-word;
+        overflow: hidden;
+        height: 505px;
+    }
+    &__note{
+        color: #3C2A10;
+        font-family: M+1m;
+        line-height: 1.5;
+        padding-top:30px;
+        padding-left: 20px;
+
+        span{
+            color: #4A6C9B;
+            border-bottom: 1px solid #4A6C9B;
+        }
+    }
+}
+
+@media screen and(min-width:834px){
+    .p-blockquote{
+        height: 444px;
+
+        &__text{
+            padding: 50px 56px 0 50px;
+            height: 252px;
+        }
+        &__note{
+            padding-top:60px;
+            padding-left: 50px;
+        }
+    }
+}
+
+@media screen and(min-width:1920px){
+    .p-blockquote{
+        height: 319px;
+
+        &__text{
+            padding: 50px 60px 0 50px;
+            height: 137px;
+        }
+    }
+}

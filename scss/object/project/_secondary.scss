@@ -1,0 +1,147 @@
+.p-secondary1{
+    &--top{
+        margin-top: 10px;
+        margin-bottom: 60px;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        list-style-type: decimal;
+        margin-bottom: 20px;
+    }
+
+    &__list2{
+        display: flex;
+        flex-direction: column;
+        list-style-type: decimal;
+        margin-bottom: 20px;
+        margin-left: 18px;
+    }
+
+    &__list__item{
+        color: #3C2A10;
+    }
+
+    &--bottom{
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and(min-width:834px){
+    .p-secondary1{
+        &--top{
+            margin-top: 60px;
+        }
+        &__list{
+            margin-left: 50px;
+        }
+        
+        &__list2{
+            margin-left: 68px;
+        }
+    
+        &--bottom{
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.p-secondary2{
+    height: 237px;
+    background-color: #F5F5F5;
+    padding: 30px 59px 50px 30px;
+
+    code{
+      line-height: 1.43;
+      color: #3C2A10;
+      font-family: M+1m;
+       margin: 50px auto 50px 50px;
+    }
+}
+
+.p-secondary3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    tr{
+        width: 100%;
+        height: 77px;
+    }
+
+    .p-seconday3__table__td1{
+        width: 40.3%;
+        padding-left:30px ;
+    }
+
+    .p-seconday3__table__td2{
+        width: 59.7%;
+        padding-left:30px ;
+    }
+}
+
+@media screen and(min-width:834px){
+    .p-secondary3{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    
+        .p-seconday3__table__td1{
+            width: 30%;
+        }
+        .p-seconday3__table__td2{
+            width: 70%;
+        }
+    }
+}
+
+@media screen and(min-width:1920px){
+    .p-secondary3{
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+}
+
+.p-secondary4{
+    height: 81px;
+    margin-bottom: 30px;
+
+    &__button{
+        width: 100%;
+        max-width: 429px;
+        height: 81px;
+        background-image:linear-gradient(#F2EDE9,#DED8D3);
+        border: solid 1px #707070;
+        border-radius: 20px;
+        color: #3C2A10;
+        font-family: M+1m;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+@media screen and(min-width:834px){
+    .p-secondary4{
+        height: 104px;
+        margin-bottom: 60px;
+    
+        &__button{
+            height: 104px;
+        }
+    }
+}
+
+.p-secondary5{
+    margin-bottom: 70px;
+    &__text{
+        color: #3C2A10;
+        font-family: M+1m;
+        font-weight: bold;
+    }
+}
+
+@media screen and(min-width:1920px){
+    .p-secondary5{
+        margin-bottom: 179px;
+    }
+}

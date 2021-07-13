@@ -1,0 +1,73 @@
+.l-product{
+    &__img--main{
+        background-image: url(../img/product-gallery-iphone.jpg);
+        height: 124px;
+        width: 100%;
+        margin-top: 30px;
+        background-position: bottom center;
+        background-size: cover;
+    }
+
+    &__item__img--top{
+        background-image: url(../img/product-gallery-iphone.jpg);
+        height: 100%;
+        width: 43%;
+        background-size: contain;
+        position: absolute;
+    }
+
+    &__item__img--bottom{
+        background-image: url(../img/product-gallery-iphone.jpg);
+        height: 100%;
+        width: 43%;
+        background-size: contain;
+        position: absolute;
+        right: 0;
+    }
+
+    &__img--sub{
+        background-image: url(../img/product-gallery-iphone.jpg);
+        height: 166px;
+        width: 79.7%;
+        background-size: contain;
+        background-position: center;
+        margin: 30px auto;
+    }
+}
+
+@media screen and(min-width:834px){
+    .l-product{
+        &__img--main{
+            background-image: url(../img/product-gallery-ipad.jpg);
+            height: 264px;
+            margin-top: 60px;
+        }
+    
+        &__item__img--top{
+            background-image: url(../img/product-gallery-ipad.jpg);
+        }
+    
+        &__item__img--bottom{
+            background-image: url(../img/product-gallery-ipad.jpg);
+        }
+    
+        &__img--sub{
+            background-image: url(../img/product-gallery-ipad.jpg);
+            height: 358px;
+            width: 81.37%;
+            margin: 60px auto;
+        }
+    }
+}
+
+@media screen and(min-width:1920px){
+    .l-product{
+        &__img--main{
+            height: 500px;
+        }
+    
+        &__img--sub{
+            width: 43%;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .p-top__img{
-    //background-size: cover;
+    
     height: 285px;
     width: 100%;
     object-fit: cover;
@@ -127,5 +127,41 @@
         &__subtitle--archive_search{
             top:330px;
         }
+    }
+}
+
+.p-top__title--single{//シングルページ
+    position: absolute;
+    font-family: M+1m;
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff;
+    padding-left: 26px;
+    top:308px;
+}
+
+@media screen and(min-width:834px){
+    .p-top__title--single{
+        padding-left:86px ;
+        top: 425px;
+        font-size: 60px;
+    }
+}
+
+.p-top__title--page{//ページ
+    position: absolute;
+    font-family: M+1m;
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff;
+    padding-left: 45px;
+    top:308px;
+}
+
+@media screen and(min-width:834px){
+    .p-top__title--page{
+        padding-left:86px ;
+        top: 425px;
+        font-size: 60px;
     }
 }

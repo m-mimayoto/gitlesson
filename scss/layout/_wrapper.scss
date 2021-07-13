@@ -1,0 +1,19 @@
+.l-wrapper--single{
+    padding-left:20px ;
+    padding-right:20px ;
+}
+
+@media screen and(min-width:834px){
+    .l-wrapper--single{
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+}
+
+@media  screen and(min-width:1920px) {
+    .l-wrapper--single{
+        width: 80.88%;
+        padding-left: 100px;
+        padding-right: 100px;
+    }    
+}

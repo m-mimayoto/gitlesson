@@ -62,3 +62,49 @@
         width: 80.88%;
     }
 }
+
+.l-top--single{//シングルページ
+    position: relative;
+    width: 100%;
+    height: 225px;
+    background-size: cover;
+    background-image: url(../img/page-title-single-iphone.jpg);
+    background-position: center;
+}
+
+@media screen and(min-width:834px){
+    .l-top--single{
+    background-image: url(../img/page-title-single-ipad.jpg);
+    height: 500px;
+    }
+}
+
+@media screen and(min-width:1920px){
+    .l-top--single{
+        background-image: url(../img/page-title-single-pc.jpg); 
+        width:80.88% ;
+    }
+}
+
+.l-top--page{//ページ
+    position: relative;
+    width: 100%;
+    height: 224px;
+    background-size: cover;
+    background-image: url(../img/title-page-iphone.jpg);
+    background-position: center;
+}
+
+@media screen and(min-width:834px){
+    .l-top--page{
+    background-image: url(../img/title-page-ipad.jpg);
+    height: 500px;
+    }
+}
+
+@media screen and(min-width:1920px){
+    .l-top--page{
+    background-image: url(../img/title-page-pc.jpg);
+    width: 80.88%;
+    }
+}
