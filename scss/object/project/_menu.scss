@@ -60,7 +60,6 @@
         font-weight: bold;
         font-size: 20px;
         padding-top: 30.5px;
-        padding-left: 17px;
     }
 
     &__subtitle{
@@ -69,19 +68,18 @@
         font-size: 16px;
         font-weight: bold;
         padding-top:24px ;
-        padding-left:17px ;
     }
 
     &__text{
         color: #fff;
         font-family: M+1m;
         font-size: 16px;
-        margin: 10px 73px 40px 17px;
+        margin: 10px 0 40px 0;
         overflow-wrap:  break-word;
         overflow: hidden;
         line-height: 1.5;
         height: 114px;
-        width: 73.1%;
+        //width: 89.88%;
     }
 }
 
@@ -90,17 +88,17 @@
 
         &__title{
             padding-top: 29px;
-            padding-left: 34.7px;
+            
         }
     
         &__subtitle{
             padding-top:20px ;
-            padding-left:34.7px ;
+           
         }
     
         &__text{
-            margin: 10px 59px 45px 34.7px;
-            width: 68.1%;
+            margin: 10px 0 45px 0;
+            //width: 68.1%;
         }
     }
 }
@@ -110,19 +108,17 @@
 
         &__title{
             padding-top: 53px;
-            padding-left: 63px;
             font-size: 36px;
          }
     
         &__subtitle{
             padding-top:47px ;
-            padding-left:63px ;
             font-size: 24px;
         }
     
         &__text{
-            margin: 17px 104px 60px 63px;
-            width: 75.29%;
+            margin: 17px 0 60px 0;
+            //width: 75.29%;
         }
     }
 }

@@ -718,6 +718,8 @@ progress {
   height: 354.59px;
   width: 100%;
   background-position: center;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 @media screen and (min-width: 834px) {
@@ -741,6 +743,8 @@ progress {
     position: absolute;
     top: 0;
     left: 50%;
+    padding-left: 34.7px;
+    padding-right: 34.7px;
   }
 }
 
@@ -764,6 +768,8 @@ progress {
     height: 471px;
     width: 49.96%;
     left: 49.59%;
+    padding-left: 63px;
+    padding-right: 63px;
   }
 }
 
@@ -974,19 +980,15 @@ progress {
   color: #707070;
   background-color: #fff;
   border-radius: 50px;
-  padding: 10px 42.1px 10.5px 41.1px;
-  margin: 0 27.6% 43.7px 23.7%;
+  padding: 10px 41.1px 10.5px 41.1px;
 }
 
-@media screen and (min-width: 834px) {
-  .c-button--detail {
-    margin: 0 23.93% 40px 27.5%;
-  }
+.c-button__block {
+  text-align: center;
 }
 
 @media screen and (min-width: 1920px) {
   .c-button--detail {
-    margin: 0 26.47% 60px 30.32%;
     padding: 27px 106px;
   }
 }
@@ -1597,7 +1599,6 @@ progress {
   font-weight: bold;
   font-size: 20px;
   padding-top: 30.5px;
-  padding-left: 17px;
 }
 
 .p-menu__list__item__subtitle {
@@ -1606,50 +1607,42 @@ progress {
   font-size: 16px;
   font-weight: bold;
   padding-top: 24px;
-  padding-left: 17px;
 }
 
 .p-menu__list__item__text {
   color: #fff;
   font-family: M1m;
   font-size: 16px;
-  margin: 10px 73px 40px 17px;
+  margin: 10px 0 40px 0;
   overflow-wrap: break-word;
   overflow: hidden;
   line-height: 1.5;
   height: 114px;
-  width: 73.1%;
 }
 
 @media screen and (min-width: 834px) {
   .p-menu__list__item__title {
     padding-top: 29px;
-    padding-left: 34.7px;
   }
   .p-menu__list__item__subtitle {
     padding-top: 20px;
-    padding-left: 34.7px;
   }
   .p-menu__list__item__text {
-    margin: 10px 59px 45px 34.7px;
-    width: 68.1%;
+    margin: 10px 0 45px 0;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .p-menu__list__item__title {
     padding-top: 53px;
-    padding-left: 63px;
     font-size: 36px;
   }
   .p-menu__list__item__subtitle {
     padding-top: 47px;
-    padding-left: 63px;
     font-size: 24px;
   }
   .p-menu__list__item__text {
-    margin: 17px 104px 60px 63px;
-    width: 75.29%;
+    margin: 17px 0 60px 0;
   }
 }
 
@@ -1943,6 +1936,7 @@ progress {
   height: 209px;
   margin-bottom: 20px;
   background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-width: 834px) {
@@ -1965,7 +1959,6 @@ progress {
   }
   .p-gallery__item__img {
     height: 205px;
-    background-size: contain;
   }
 }
 
