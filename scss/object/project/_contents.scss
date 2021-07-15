@@ -2,36 +2,27 @@
     h2{
         margin-top: 30px;
         font-size: 28px;
-        font-weight: bold;
-        font-family: M+1m;
-        color: #3C2A10;
+        @include title;
     }
 
     p{
         height: 183px;
-        overflow-wrap:  break-word;
-        overflow: hidden;
-        line-height: 1.5;
         margin-top: 30px;
-        font-family: M+1m;
+       @include text;
         color: #3C2A10;
     }
 
     h3{
         margin-top: 34px;
-        font-weight: bold;
-        font-family: M+1m;
         font-size: 24px;
-        color: #3C2A10;
+        @include title;
     }
 
     h4{
         margin-top: 30px;
         margin-bottom: 29px;
-        font-weight: bold;
-        font-family: M+1m;
         font-size: 20px;
-        color: #3C2A10;
+        @include title;
     }
 }
 

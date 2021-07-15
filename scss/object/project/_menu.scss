@@ -2,19 +2,13 @@
     &__title{
         padding-top: 30px;
         padding-left: 22px;
-        color: #3C2A10;
-        font-weight: bold;
-        font-family: M+1m;
+        @include title;
         font-size: 28px;
     }
 
     &__text{
-        font-family: M+1m;
-        font-size: 16px;
+        @include text;
         color:#3C2A10;
-        overflow-wrap:  break-word;
-        overflow: hidden;
-        line-height: 1.5;
         height: 276px;
         width: 89.3%;
         margin: 30px 18px 19px 22px;
@@ -55,29 +49,20 @@
 .p-menu__list__item{
 
     &__title{
-        color: #fff;
-        font-family: M+1m;
-        font-weight: bold;
+        @include titleF;
         font-size: 20px;
         padding-top: 30.5px;
     }
 
     &__subtitle{
-        color: #fff;
-        font-family: M+1m;
-        font-size: 16px;
-        font-weight: bold;
+        @include titleF;
         padding-top:24px ;
     }
 
     &__text{
         color: #fff;
-        font-family: M+1m;
-        font-size: 16px;
+        @include text;
         margin: 10px 0 40px 0;
-        overflow-wrap:  break-word;
-        overflow: hidden;
-        line-height: 1.5;
         height: 114px;
         //width: 89.88%;
     }

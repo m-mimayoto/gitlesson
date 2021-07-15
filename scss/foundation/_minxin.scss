@@ -1,1 +1,44 @@
 //*flexやpositonなどの指定*//
+
+@mixin text {
+    overflow-wrap: break-word;
+    overflow: hidden;
+    line-height: 1.43;
+    font-family: M+1m;
+}
+
+@mixin title {
+    font-weight: bold;
+    font-family: M+1m;
+    color: #3C2A10;
+}
+
+@mixin titleF {
+    color: #fff;
+    font-family: M+1m;
+    font-weight: bold;
+}
+
+@mixin  topM {
+    position: absolute;
+    font-family: M+1m;
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff;
+}
+
+@mixin topR {
+    position: absolute;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff;
+}
+
+@mixin subtitle {
+    position: absolute;
+    font-family: M+1m;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}

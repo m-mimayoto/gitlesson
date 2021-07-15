@@ -8,7 +8,6 @@
 
 body {
   position: relative;
-  background-color: #FFFDFA;
 }
 
 /*!
@@ -332,6 +331,10 @@ progress {
 /* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
 [aria-disabled='true'] {
   cursor: default;
+}
+
+body {
+  background-color: #FFFDFA;
 }
 
 .l-header {
@@ -999,6 +1002,7 @@ progress {
   text-align: center;
   padding-top: 40px;
   font-size: 40px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1920px) {
@@ -1207,7 +1211,8 @@ progress {
 
 .p-top__title {
   position: absolute;
-  font-family: Robot;
+  font-family: M1m;
+  font-weight: bold;
   font-size: 36px;
   color: #fff;
   padding-left: 25px;
@@ -1368,7 +1373,7 @@ progress {
 .p-service__title--eatin {
   font-family: Robot;
   font-size: 41px;
-  color: #EAEAEA;
+  color: #fff;
   padding-left: 12px;
   position: absolute;
   top: 13px;
@@ -1405,21 +1410,22 @@ progress {
 }
 
 .p-service__cat__heading {
-  font-family: M +1m;
-  font-size: 22px;
+  font-weight: bold;
+  font-family: M1m;
   color: #3C2A10;
+  font-size: 22px;
   margin-left: 10px;
   margin-top: 19px;
   padding: 0;
 }
 
 .p-service__cat__item {
-  font-family: M1m;
-  font-size: 16px;
   color: #3C2A10;
-  margin: 19px 14px 23px 10px;
   overflow-wrap: break-word;
   overflow: hidden;
+  line-height: 1.43;
+  font-family: M1m;
+  margin: 19px 14px 23px 10px;
   width: 92.3%;
   height: 43.5%;
 }
@@ -1512,15 +1518,15 @@ progress {
 
 .p-map__content__item {
   font-family: M1m;
+  overflow-wrap: break-word;
+  overflow: hidden;
   font-size: 14px;
   font-weight: bold;
   color: #fff;
   margin: 40px 40px 51px 40px;
-  overflow-wrap: break-word;
-  overflow: hidden;
   width: 78.7%;
   height: 75%;
-  line-height: 33px;
+  line-height: 2.3;
 }
 
 @media screen and (min-width: 834px) {
@@ -1550,19 +1556,18 @@ progress {
 .p-menu__desc__title {
   padding-top: 30px;
   padding-left: 22px;
-  color: #3C2A10;
   font-weight: bold;
   font-family: M1m;
+  color: #3C2A10;
   font-size: 28px;
 }
 
 .p-menu__desc__text {
-  font-family: M1m;
-  font-size: 16px;
-  color: #3C2A10;
   overflow-wrap: break-word;
   overflow: hidden;
-  line-height: 1.5;
+  line-height: 1.43;
+  font-family: M1m;
+  color: #3C2A10;
   height: 276px;
   width: 89.3%;
   margin: 30px 18px 19px 22px;
@@ -1604,19 +1609,17 @@ progress {
 .p-menu__list__item__subtitle {
   color: #fff;
   font-family: M1m;
-  font-size: 16px;
   font-weight: bold;
   padding-top: 24px;
 }
 
 .p-menu__list__item__text {
   color: #fff;
-  font-family: M1m;
-  font-size: 16px;
-  margin: 10px 0 40px 0;
   overflow-wrap: break-word;
   overflow: hidden;
-  line-height: 1.5;
+  line-height: 1.43;
+  font-family: M1m;
+  margin: 10px 0 40px 0;
   height: 114px;
 }
 
@@ -1753,28 +1756,28 @@ progress {
 
 .p-contents p {
   height: 183px;
+  margin-top: 30px;
   overflow-wrap: break-word;
   overflow: hidden;
-  line-height: 1.5;
-  margin-top: 30px;
+  line-height: 1.43;
   font-family: M1m;
   color: #3C2A10;
 }
 
 .p-contents h3 {
   margin-top: 34px;
+  font-size: 24px;
   font-weight: bold;
   font-family: M1m;
-  font-size: 24px;
   color: #3C2A10;
 }
 
 .p-contents h4 {
   margin-top: 30px;
   margin-bottom: 29px;
+  font-size: 20px;
   font-weight: bold;
   font-family: M1m;
-  font-size: 20px;
   color: #3C2A10;
 }
 
@@ -1810,11 +1813,11 @@ progress {
 
 .p-blockquote__text {
   color: #3C2A10;
-  font-family: M1m;
-  line-height: 1.5;
-  padding: 30px 16px 0 20px;
   overflow-wrap: break-word;
   overflow: hidden;
+  line-height: 1.43;
+  font-family: M1m;
+  padding: 30px 16px 0 20px;
   height: 505px;
 }
 

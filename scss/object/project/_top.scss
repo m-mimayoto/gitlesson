@@ -1,5 +1,4 @@
 .p-top__img{
-    
     height: 285px;
     width: 100%;
     object-fit: cover;
@@ -14,10 +13,7 @@
 }
 
 .p-top__title{
-        position: absolute;
-        font-family: Robot;
-        font-size: 36px;
-        color: #fff;
+        @include topM;
         padding-left: 25px;
         top:119px;
 }
@@ -38,20 +34,12 @@
 
 .p-top{//アーカイブ
     &__title--menu{
-        position: absolute;
-        font-family: Roboto;
-        font-weight: bold;
-        font-size: 36px;
-        color: #fff;
+        @include topR;
         padding-left: 37px;
         top:319px;
     }
     &__subtitle--archive{
-        position: absolute;
-        font-family: M+ 1m;
-        font-size: 16px;
-        font-weight: bold;
-        color: #fff;
+        @include subtitle;
         padding-left: 37px;
         top:374px;
     }
@@ -85,21 +73,13 @@
 
 .p-top{//アーカイブサーチ
     &__title--search{
-            position: absolute;
-            font-family: Roboto;
-            font-weight: bold;
-            font-size: 36px;
-            color: #fff;
+            @include topR;
             padding-left: 37px;
             top:320px;
     }
 
     &__subtitle--archive_search{
-            position: absolute;
-            font-family: M+ 1m;
-            font-size: 16px;
-            font-weight: bold;
-            color: #fff;
+            @include subtitle;
             padding-left: 37px;
             top:374px;
     }
@@ -131,11 +111,7 @@
 }
 
 .p-top__title--single{//シングルページ
-    position: absolute;
-    font-family: M+1m;
-    font-weight: bold;
-    font-size: 36px;
-    color: #fff;
+    @include topM;
     padding-left: 26px;
     top:308px;
 }
@@ -149,11 +125,7 @@
 }
 
 .p-top__title--page{//ページ
-    position: absolute;
-    font-family: M+1m;
-    font-weight: bold;
-    font-size: 36px;
-    color: #fff;
+    @include topM;
     padding-left: 45px;
     top:308px;
 }
